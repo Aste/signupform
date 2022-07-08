@@ -38,39 +38,39 @@
 
       <div class="signupmainpage">
         <div class="signupheader">Let's do this!</div>
-        <form class="form" action="">
+        <form action="" method="">
             <div class="inputdiv">
-              <label>FIRST NAME</label>
-              <input type="text" />
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required/>
             </div>
             <div class="inputdiv">
-              <label>LAST NAME</label>
-              <input type="text" />
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" required/>
             </div>
-            <div class="inputblank"></div>
+            <div></div>
             <div class="inputdiv">
-              <label>EMAIL</label>
-              <input type="text" />
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required/>
+            </div>
+            <div class="inputdiv" id="phonenumber">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="number" name="phone-number" id="phone-number" required/>
+            </div>
+            <div></div>
+            <div class="inputdiv">
+              <label for="password">PASSWORD</label>
+              <input class="error" type="password" name="password" id="password" required/>
             </div>
             <div class="inputdiv">
-              <label>PHONE NUMBER</label>
-              <input type="text" />
+                <label for="confirm-password">PASSWORD</label>
+                <input type="password" name="confirm-password" id="confirm-password" required/>
             </div>
-            <div class="inputblank"></div>
-            <div class="inputdiv">
-              <label>PASSWORD</label>
-              <input class="error" type="text" />
-            </div>
-            <div class="inputdiv">
-              <label>CONFIRM PASSWORD</label>
-              <input type="text" />
-            </div>
-            <div class="inputblank"></div>
+            <div></div>
           </div>
         </form>
 
       <div class="mainpage createAccount">
-        <button href="http://127.0.0.1:5500/signupform/signupform.html">Create Account</button>
+        <button type="submit">Create Account</button>
         <br />
         Already have an account?
         <a
